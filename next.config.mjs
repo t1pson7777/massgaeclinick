@@ -1,9 +1,11 @@
-/** @type {import('next').NextConfig} */
+/** next.config.mjs (ES module) */
 const nextConfig = {
+  reactStrictMode: true,
   typescript: {
-    // WARNING: отключает фейл билда при ошибках TS
-    ignoreBuildErrors: true,
+    // если хочешь временно пропустить ошибки TS во время билда (не рекомендую навсегда)
+    // ignoreBuildErrors: true
   },
+  // любые другие опции
 }
 
-module.exports = nextConfig
+export default nextConfig
